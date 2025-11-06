@@ -1,0 +1,84 @@
+/* ===== HERO SECTION ===== */
+.hero {
+  position: relative;
+  background: url('table.jpg') center/cover no-repeat;
+  height: 420px;
+  margin: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.overlay h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.overlay p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-buttons .blue {
+  background: #007bff;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.hero-buttons .white {
+  background: #fff;
+  color: #000;
+}
+
+/* ===== ABOUT + FEEDBACK ===== */
+.about-section,
+.feedback-section {
+  padding: 50px 20px;
+  margin: 40px auto;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2,
+.feedback-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.feedback-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feedback-section input,
+.feedback-section textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 700px) {
+  .hero {
+    margin: 20px;
+    height: 300px;
+  }
+  .overlay {
+    padding: 30px;
+  }
+}

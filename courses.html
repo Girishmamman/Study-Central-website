@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - StudyCentral</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="courses.css">
+</head>
+
+<body>
+  <!-- Simple Navigation  -->
+ <div class="simple-navbar">
+  <div class="simple-logo">StudyCentral</div>
+  <div class="simple-menu">
+    <a href="index.html" target="_blank" rel="noopener noreferrer">Home</a>
+    <a href="courses.html" target="_blank" rel="noopener noreferrer">Courses</a>
+    <a href="syllabus.html" target="_blank" rel="noopener noreferrer">Syllabus</a>
+    <a href="resources.html" target="_blank" rel="noopener noreferrer">Resources</a>
+    <a href="about.html" target="_blank" rel="noopener noreferrer">About</a>
+  </div>
+</div>
+
+
+
+  <main class="courses-page-main">
+    <h1>CSE 3rd Semester Courses</h1>
+    <p class="subtitle">Explore focused study materials for core subjects.</p>
+    <div class="course-grid">
+      <div class="course-card">
+        
+        <div>
+          <h2>Data Structures</h2>
+          <p>Learn to organize and manage data efficiently.</p>
+        </div>
+      </div>
+      <div class="course-card">
+        
+        <div>
+          <h2>Discrete Structures</h2>
+          <p>Understand the logic and mathematical foundations of CS.</p>
+        </div>
+      </div>
+      <div class="course-card">
+        
+        <div>
+          <h2>Software Engineering</h2>
+          <p>Master the principles of building real-world software systems.</p>
+        </div>
+      </div>
+      <div class="course-card">
+        
+        <div>
+          <h2>Web Technologies</h2>
+          <p>Discover how modern web applications are built and deployed.</p>
+        </div>
+      </div>
+      <div class="course-card">
+       
+        <div>
+          <h2>Latest Trends & Technologies</h2>
+          <p>Stay updated on emerging technologies and industry shifts.</p>
+        </div>
+      </div>
+      <div class="course-card">
+        
+        <div>
+          <h2>Database Management Systems</h2>
+          <p>Build, query, and manage structured information in databases.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script>
+  // Highlight the current page link in navbar
+  const currentPage = window.location.pathname.split('/').pop();
+  document.querySelectorAll('.simple-menu a').forEach(link => {
+    const linkPage = link.getAttribute('href');
+    if (linkPage === currentPage) {
+      link.classList.add('active');
+    }
+  });
+</script>
+<footer class="site-footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="syllabus.html">Syllabus</a>
+      <a href="#">Resources</a>
+      <a href="about.html">About</a>
+    </div>
+    <p class="copyright-text">© 2025 StudyCentral. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

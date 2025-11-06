@@ -1,0 +1,58 @@
+/* ===== SYLLABUS PAGE ===== */
+.syllabus-page {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.syllabus-page h1 {
+  font-size: 2em;
+  color: #14254c;
+  margin-bottom: 40px;
+}
+
+.syllabus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.syllabus-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 25px;
+  box-shadow: 0 2px 6px rgba(40, 60, 120, 0.08);
+  transition: transform 0.25s, box-shadow 0.25s;
+  text-align: left;
+}
+
+.syllabus-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(40, 60, 120, 0.12);
+}
+
+.syllabus-card h2 {
+  color: #284472;
+  margin-bottom: 10px;
+}
+
+.syllabus-card p {
+  color: #51627a;
+  font-size: 0.96em;
+  margin-bottom: 20px;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  background: #007bff;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 10px 18px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #0056b3;
+}

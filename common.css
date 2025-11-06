@@ -1,0 +1,99 @@
+/* ===== BASIC PAGE SETUP ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f9fb;
+  color: #232d3b;
+}
+
+/* ===== UNIVERSAL NAVBAR (used across all pages) ===== */
+.simple-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 4px rgba(40,60,120,0.07);
+}
+
+.simple-logo {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #284472;
+  text-decoration: none;
+}
+
+.simple-menu {
+  display: flex;
+  gap: 14px;
+}
+
+.simple-menu a {
+  display: inline-block;
+  color: #233862;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.5;
+  min-width: 85px;
+  text-align: center;
+}
+
+.simple-menu a:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  color: #000;
+}
+
+.simple-menu a.active {
+  background-color: #444;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  background-color: #333;
+  color: #ccc;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #007BFF;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 700px) {
+  .simple-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 20px;
+  }
+
+  .simple-menu {
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .simple-menu a {
+    margin: 8px 12px 0 0;
+  }
+}

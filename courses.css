@@ -1,0 +1,73 @@
+/* ===== COURSES PAGE ===== */
+.courses-page-main {
+  max-width: 1040px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.courses-page-main h1 {
+  font-size: 2.2em;
+  color: #14254c;
+  margin-bottom: 8px;
+}
+
+.courses-page-main .subtitle {
+  color: #57709b;
+  margin-bottom: 40px;
+  font-size: 17px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+  gap: 30px;
+}
+
+.course-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(40,60,120,0.1);
+  padding: 28px 20px;
+  transition: 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(40,60,120,0.15);
+}
+
+.course-card h2 {
+  margin: 0;
+  color: #284472;
+  font-size: 1.2em;
+}
+
+.course-card p {
+  color: #6483a8;
+  font-size: 1em;
+  margin-top: 7px;
+}
+/* ===== FOOTER ===== */
+.site-footer {
+  background-color: #333;
+  color: #ccc;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #007BFF;
+}

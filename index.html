@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyCentral</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="indexindex.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+<div class="simple-navbar">
+  <div class="simple-logo">StudyCentral</div>
+  <div class="simple-menu">
+    <a href="index.html" target="_blank" rel="noopener noreferrer">Home</a>
+    <a href="courses.html" target="_blank" rel="noopener noreferrer">Courses</a>
+    <a href="syllabus.html" target="_blank" rel="noopener noreferrer">Syllabus</a>
+    <a href="resources.html" target="_blank" rel="noopener noreferrer">Resources</a>
+    <a href="about.html" target="_blank" rel="noopener noreferrer">About</a>
+  </div>
+</div>
+
+
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="overlay">
+      <h2>Your Gateway to Academic Success</h2>
+      <p>Access a vast library of resources tailored for CSE 3rd semester students.<br>
+         Study smarter, not harder.</p>
+      <div class="hero-buttons">
+        
+       
+      </div>
+    </div>
+  </div>
+
+    <!-- About Section -->
+ <!-- About Section -->
+ <section class="about-section" id="about">
+  <img src="study.jpg" alt="About StudyCentral">
+  <div>
+    <h2>About StudyCentral</h2>
+    <p>StudyCentral is dedicated to providing high-quality academic resources specifically curated for Computer Science and Engineering students. Our mission is to empower learners with the tools and knowledge they need to excel in their 3rd semester and beyond.</p>
+  </div>
+</section>
+
+
+  <!-- Feedback Section -->
+  <section class="feedback-section" id="feedback">
+    <h2>Feedback</h2>
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Your name" required><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Your email" required><br>
+
+      <label for="comments">Comments:</label><br>
+      <textarea id="comments" name="comments" rows="5" placeholder="Your feedback" required></textarea><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="#">Terms of Condition</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="copyright-text">
+      &copy; 2025 StudyCentral. All Rights Reserved.
+    </div>
+  </footer>
+<script>
+  // Highlight the current page link in navbar
+  const currentPage = window.location.pathname.split('/').pop();
+  document.querySelectorAll('.simple-menu a').forEach(link => {
+    const linkPage = link.getAttribute('href');
+    if (linkPage === currentPage) {
+      link.classList.add('active');
+    }
+  });
+</script>
+
+</body>
+</html>

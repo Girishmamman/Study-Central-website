@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - StudyCentral</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+<div class="simple-navbar">
+  <div class="simple-logo">StudyCentral</div>
+  <div class="simple-menu">
+    <a href="index.html" target="_blank" rel="noopener noreferrer">Home</a>
+    <a href="courses.html" target="_blank" rel="noopener noreferrer">Courses</a>
+    <a href="syllabus.html" target="_blank" rel="noopener noreferrer">Syllabus</a>
+    <a href="resources.html" target="_blank" rel="noopener noreferrer">Resources</a>
+    <a href="about.html" target="_blank" rel="noopener noreferrer">About</a>
+  </div>
+</div>
+
+
+  <main class="about-main">
+    <!-- Hero Banner -->
+    <section class="about-hero">
+      <div class="about-hero-bg"></div>
+      <div class="about-hero-text">
+        <h1>Empowering Your CSE Journey.</h1>
+        <p>Your one-stop destination for essential learning resources for your 3rd semester of Computer Science and Engineering.</p>
+      </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="about-mission">
+      <h2>Our Mission &amp; Vision</h2>
+      <div class="about-cards-row">
+        <div class="about-card">
+          
+          <h3>Our Mission</h3>
+          <p>
+            To provide a comprehensive and easily accessible collection of resources that supports the academic success of CSE 3rd-semester students. We are committed to curating high-quality content to foster a deeper understanding of core subjects.
+          </p>
+        </div>
+        <div class="about-card">
+         
+          <h3>Our Vision</h3>
+          <p>
+            To become the go-to digital resource for all Computer Science and Engineering students, fostering a vibrant community of learning, innovation, and collaboration that extends beyond the classroom.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="about-why">
+      <h2>Why Choose Our E-Library?</h2>
+      <div class="about-icons-row">
+        <div class="about-icon-feature">
+          
+          <h4>Curated Content</h4>
+          <p>Access a handpicked collection of books, notes, and resources relevant to your curriculum.</p>
+        </div>
+        <div class="about-icon-feature">
+          
+          <h4>24/7 Access</h4>
+          <p>Learn at your own pace, anytime, anywhere, with our round-the-clock available e-library.</p>
+        </div>
+        <div class="about-icon-feature">
+          
+          <h4>Collaborative Learning</h4>
+          <p>Engage with peers, share insights, and learn together in a supportive community.</p>
+        </div>
+        <div class="about-icon-feature">
+         
+          <h4>Exam Preparation</h4>
+          <p>Get ahead with dedicated resources and materials to help you ace your exams.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+  // Highlight the current page link in navbar
+  const currentPage = window.location.pathname.split('/').pop();
+  document.querySelectorAll('.simple-menu a').forEach(link => {
+    const linkPage = link.getAttribute('href');
+    if (linkPage === currentPage) {
+      link.classList.add('active');
+    }
+  });
+</script>
+
+</body>
+</html>

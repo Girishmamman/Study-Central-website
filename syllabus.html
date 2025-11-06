@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syllabus - StudyCentral</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="syllabus.css">
+</head>
+
+<body>
+  <!-- StudyCentral Navbar -->
+ <div class="simple-navbar">
+  <div class="simple-logo">StudyCentral</div>
+  <div class="simple-menu">
+    <a href="index.html" target="_blank" rel="noopener noreferrer">Home</a>
+    <a href="courses.html" target="_blank" rel="noopener noreferrer">Courses</a>
+    <a href="syllabus.html" target="_blank" rel="noopener noreferrer">Syllabus</a>
+    <a href="resources.html" target="_blank" rel="noopener noreferrer">Resources</a>
+    <a href="about.html" target="_blank" rel="noopener noreferrer">About</a>
+  </div>
+</div>
+
+
+
+  <!-- Syllabus Page Main -->
+  <main class="syllabus-page">
+    <h1>Computer Science & Engineering – 3rd Semester Syllabus</h1>
+
+    <div class="syllabus-grid">
+      <div class="syllabus-card">
+        <h2>Data Structure</h2>
+        <p>Detailed concepts of arrays, linked lists, stacks, queues, trees, and graphs.</p>
+        <a href="subjects/ds.html" class="btn">View Syllabus</a>
+      </div>
+
+      <div class="syllabus-card">
+        <h2>Discrete Structure</h2>
+        <p>Fundamentals of logic, sets, relations, functions, combinatorics, and graphs.</p>
+        <a href="subjects/discrete.html" class="btn">View Syllabus</a>
+      </div>
+
+      <div class="syllabus-card">
+        <h2>Software Engineering</h2>
+        <p>Software process models, requirement analysis, design principles, and testing.</p>
+        <a href="subjects/se.html" class="btn">View Syllabus</a>
+      </div>
+
+      <div class="syllabus-card">
+        <h2>Web Technologies</h2>
+        <p>HTML, CSS, JavaScript, and backend fundamentals for modern web development.</p>
+        <a href="subjects/web.html" class="btn">View Syllabus</a>
+      </div>
+
+      <div class="syllabus-card">
+        <h2>Latest Trends and Technologies</h2>
+        <p>Overview of AI, ML, Cloud Computing, IoT, and emerging digital technologies.</p>
+        <a href="subjects/ltt.html" class="btn">View Syllabus</a>
+      </div>
+
+      <div class="syllabus-card">
+        <h2>Database Systems</h2>
+        <p>Concepts of relational databases, SQL, normalization, and transaction management.</p>
+        <a href="subjects/db.html" class="btn">View Syllabus</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="syllabus.html">Syllabus</a>
+      <a href="#">Resources</a>
+      <a href="about.html">About</a>
+    </div>
+    <p class="copyright-text">© 2025 StudyCentral. All Rights Reserved.</p>
+  </footer>
+  <script>
+  // Highlight the current page link in navbar
+  const currentPage = window.location.pathname.split('/').pop();
+  document.querySelectorAll('.simple-menu a').forEach(link => {
+    const linkPage = link.getAttribute('href');
+    if (linkPage === currentPage) {
+      link.classList.add('active');
+    }
+  });
+</script>
+
+</body>
+</html>
