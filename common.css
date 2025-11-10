@@ -51,7 +51,7 @@ body {
 }
 
 .simple-menu a.active {
-  background-color: #636363; /* Capsule color */
+  background-color: #636363; 
   color: #fff;
   border-radius: 20px;
   padding: 8px 16px;

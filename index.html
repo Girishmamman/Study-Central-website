@@ -50,20 +50,21 @@
 
   <!-- Feedback Section -->
   <section class="feedback-section" id="feedback">
-    <h2>Feedback</h2>
-    <form>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" placeholder="Your name" required><br>
+  <h2>Feedback</h2>
+  <form action="feedback.php" method="POST">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Your name" required><br>
 
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" placeholder="Your email" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Your email" required><br>
 
-      <label for="comments">Comments:</label><br>
-      <textarea id="comments" name="comments" rows="5" placeholder="Your feedback" required></textarea><br>
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="5" placeholder="Your feedback" required></textarea><br>
 
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
   <!-- Footer Section -->
   <footer class="site-footer">
     <div class="footer-links">
@@ -76,8 +77,7 @@
     </div>
   </footer>
 <script>
-  // Highlight the current page link in navbar
-  const currentPage = window.location.pathname.split('/').pop();
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
   document.querySelectorAll('.simple-menu a').forEach(link => {
     const linkPage = link.getAttribute('href');
     if (linkPage === currentPage) {
@@ -85,6 +85,7 @@
     }
   });
 </script>
+
 
 </body>
 </html>

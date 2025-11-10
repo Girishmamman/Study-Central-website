@@ -78,13 +78,15 @@
     <p class="copyright-text">© 2025 StudyCentral. All Rights Reserved.</p>
   </footer>
   <script>
-  // Highlight the current page link in navbar
-  const currentPage = window.location.pathname.split('/').pop();
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
   document.querySelectorAll('.simple-menu a').forEach(link => {
     const linkPage = link.getAttribute('href');
     if (linkPage === currentPage) {
       link.classList.add('active');
     }
+  });
+</script>
+
   });
 </script>
 

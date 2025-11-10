@@ -72,8 +72,7 @@
     </div>
   </main>
   <script>
-  // Highlight the current page link in navbar
-  const currentPage = window.location.pathname.split('/').pop();
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
   document.querySelectorAll('.simple-menu a').forEach(link => {
     const linkPage = link.getAttribute('href');
     if (linkPage === currentPage) {
@@ -81,6 +80,7 @@
     }
   });
 </script>
+
 <footer class="site-footer">
     <div class="footer-links">
       <a href="index.html">Home</a>
